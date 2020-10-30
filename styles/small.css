@@ -1,0 +1,32 @@
+/* primary-color : #0065fc */
+
+/* remove underline from link */
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    margin-top: 20px;
+}
+
+header > .logo {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+header > .menu-el {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+    margin-left: auto;
+    color: #0065fc;
+    font-weight: bold;
+    
+}

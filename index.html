@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="styles/normalize.css" />
+	<link rel="stylesheet" href="styles/small.css" />
+	<link rel="stylesheet" href="styles/font-awesome/css/all.css"/>
 	<title>Reservia - résultat de recherche</title>
 </head>
 <body>
 <header>
-	<logo>
-		<img src="images//logo//Reservia.svg">
-	</logo>
-	<menu>
-		<a href="hebergement.html">Hébergement</a>
-		<a href="activites.html">Activités</a>
+		<img class="logo" src="images/logo/Reservia.svg">
+	<menu class="menu">
+		<a class="menu-el" href="hebergement.html">Hébergement</a>
+		<a class="menu-el" href="activites.html">Activités</a>
 	</menu>
-	<a href="inscription.html">S'inscrire</a>
+	<a class="menu-el" href="inscription.html">S'inscrire</a>
 </header>
-<searchSection>
+<div class="search-section">
 	<h1>Trouver votre hébergement pour des vacances de rêve</h1>
 	<h3>En plein centre ville ou en pleine nature</h3>
 	<form>
-	<input type="text" value="Marseille, France">
-	<input type="submit" value="icon-search">
-	<label>Filtres</label>
-	<input type="button" value="Économique">
-	<input type="button" value="Familial">
-	<input type="button" value="Romantique">
-	<input type="button" value="Animaux autorisés">
+		<button class="fas fa-map-marker-alt"></button>
+		<input type="text" value="Marseille, France">
+		<button class="fas fa-search"></button>
+		<label>Filtres</label>
+		<button class="fas fa-money-bill-wave">Économique</button>
+		<button class="fas fa-child">Familial</button>
+		<button class="fas fa-heart">Romantique</button>
+		<button class="fas fa-dog">Animaux autorisés</button>
 	</form>
-	<p>Plus de 500 logements sont disponibles dans cette ville</p>
-</searchSection>
-<resultSection>
-	<popularSection>
+	<p class="fas fa-info">Plus de 500 logements sont disponibles dans cette ville</p>
+</div>
+<div class="result-section">
+	<d class="popular-section">
 		<h2>Les plus populaires</h2>
 		<!--enumeration-->
-		<a href="">
-			<img src="images//hebergements//4_small//emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+		<a class="result" href="">
+			<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
 			<h3>Hotel le Soleil du matin</h3>
-			<h5>nuit à partir de <strong>135€</strong></h5>
-			<h5>* * * * *</h5>
+			<p>nuit à partir de <strong>135€</strong></p>
+			<p>* * * * *</p>
 		</a>
-	</popularSection>
-	<hostingSection>
-		<H2>Hébergement à Marseille</H2>
+	</div>
+	<d class="host-section">
+		<h2>Hébergement à Marseille</h2>
 		<!--enumeration-->
-		<a href="">
-			<img src="images//hebergements//4_small//emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+		<a class="result" href="">
+			<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
 			<h3>Hotel le Soleil du matin</h3>
-			<h5>nuit à partir de <strong>135€</strong></h5>
-			<h5>* * * * *</h5>
+			<p>nuit à partir de <strong>135€</strong></p>
+			<p>* * * * *</p>
 		</a>
-		<h5><strong>afficher plus</strong></h5>
-	</hostingSection>
-	<ActivitySection>
+		<p class="show-more" ><strong>afficher plus</strong></p>
+	</div>
+	<div class="activity-section">
 		<!--enumeration-->
-		<a href="">
-			<img src="images//activites//4_small//reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+		<a class="result" href="">
+			<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
 			<h3>vieux port</h3>
 		</a>
-	</ActivitySection>
-</resultSection>
+	</div>
+</div>
 <footer>
-	<section>
+	<div>
 		<h5>A propos</h5>
 		<ul>
 			<li><a href="">Fonctionnement du site</a></il>
 			<li><a href="">Conditions générales de vente</a></li>
 			<li><a href="">Données et confidentialités</a></li>
 		</ul>
-	</section>
-	<section>
+	</div>
+	<div>
 		<h5>Nos Hébergements</h5>
 		<ul>
 			<li><a href="">Charte qualité</a></li>
 			<li><a href="">Soumettre votre hôtel</a></li>
 		</ul>
-	</section>
-	<section>
+	</div>
+	<div>
 		<h5>Assistance</h5>
 		<ul>
 			<li><a href="">Centre d'aide</a></li>
 			<li><a href="">Nous contacter</a></li>
 		</ul>
-	</section>
+	</div>
 </footer>
 </body>
 </html>
