@@ -19,14 +19,32 @@ header > .logo {
     margin-right: auto;
 }
 
-header > .menu-el {
+header > .connexion {
     grid-column: 2;
     grid-row: 1;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-right: 15px;
     margin-left: auto;
+}
+
+header > .menu {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+header > .menu.left {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+header > .menu.right {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+header > a {
     color: #0065fc;
     font-weight: bold;
-    
+    margin-top: auto;
+    margin-bottom: auto;
 }
