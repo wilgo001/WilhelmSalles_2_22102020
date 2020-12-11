@@ -1,0 +1,101 @@
+.search-section > form > input {
+  width: 80%;
+}
+
+.popular-section {
+  margin: 5%;
+  border-radius: 5%;
+  padding: 3%;
+}
+
+.popular-section > .result {
+  height: 220px;
+}
+
+.popular-section > .result > img {
+  width: 220px;
+}
+
+.host-section {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "host-title host-title"
+    "r1 r2"
+    "r3 r4"
+    "r5 r6"
+    "show-more .";
+}
+
+.host-section > h2 {
+  grid-area: host-title;
+  margin-top: 0;
+}
+
+#r1 {
+  grid-area: r1;
+}
+
+#r2 {
+  grid-area: r2;
+}
+
+#r3 {
+  grid-area: r3;
+}
+
+#r4 {
+  grid-area: r4;
+}
+
+#r5 {
+  grid-area: r5;
+}
+
+#r6 {
+  grid-area: r6;
+}
+
+.host-section > .show-more {
+  grid-area: show-more;
+}
+
+.activity-section {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "act-title act-title"
+    "a1 a2"
+    "a3 a4"
+    "a5 a6";
+}
+
+.activity-section > h2 {
+  grid-area: act-title;
+}
+
+#a1 {
+  grid-area: a1;
+}
+
+#a2 {
+  grid-area: a2;
+}
+
+#a3 {
+  grid-area: a3;
+}
+
+#a4 {
+  grid-area: a4;
+}
+
+#a5 {
+  grid-area: a5;
+}
+
+#a6 {
+  grid-area: a6;
+}
