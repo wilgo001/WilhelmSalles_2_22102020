@@ -15,13 +15,20 @@ a {
   font-family: "Raleway";
 }
 
+nav,
+article {
+  cursor: pointer;
+}
+
 p,
 h1,
 h2,
 h3,
 h4,
 label,
-button {
+button,
+nav,
+article {
   font-family: "Raleway";
 }
 
@@ -38,24 +45,26 @@ header > .logo {
   margin-left: 20px;
   margin-right: auto;
   width: 118px;
-  margin-top: 30px;
+  height: 100px;
+  line-height: 100px;
 }
 
 header > .connexion {
   grid-column: 2;
   grid-row: 1;
   margin-right: 22px;
-  margin-top: 49px;
   margin-left: auto;
   font-size: 1.9rem;
+  height: 100px;
+  line-height: 100px;
 }
 
 header > .menu {
-  padding-top: 54px;
-  padding-bottom: 15px;
   border-bottom: solid 4px;
   text-align: center;
   font-size: 1.9rem;
+  height: 100px;
+  line-height: 100px;
 }
 
 header > .menu.left {
@@ -71,7 +80,8 @@ header > .menu.right {
   border-bottom-color: var(--grey-one);
 }
 
-header > a {
+header > a,
+nav {
   color: var(--primary-color);
   font-weight: bold;
   margin-top: auto;
@@ -130,7 +140,22 @@ header > a {
   background-color: var(--primary-color);
   border: 0px;
   margin-left: -28px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.search-section > form > .search {
+  height: 60px;
+  font-size: 1.8rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: 0px;
+  margin-left: -28px;
+  border-radius: 0 20px 20px 0;
+  font-size: 2.1rem;
+  font-weight: bold;
+  display: none;
+  padding: 10px 20px;
 }
 
 .search-section > form > label {
@@ -346,8 +371,10 @@ header > a {
   color: black;
   font-size: 1.9rem;
   font-weight: bold;
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
   align-items: center;
+  height: 70px;
+  line-height: 70px;
 }
 
 /*  FOOTER  */
@@ -357,8 +384,7 @@ footer {
 }
 
 footer > div {
-  padding-top: 30px;
-  padding-left: 30px;
+  padding: 20px 30px;
 }
 
 footer > div > h4 {

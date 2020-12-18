@@ -1,20 +1,24 @@
+:root {
+  font-size: 12px;
+}
+
+.search-section,
+.host-section,
+.activity-section,
 header > .logo {
-  margin-left: 50px;
-  margin-top: 10px;
+  margin: auto 64px;
 }
 
 header > .connexion {
   grid-column: 6;
   grid-row: 1;
-  margin-right: 70px;
-  margin-top: 60px;
+  padding: 4px 64px;
 }
 
 header > .menu {
   border-bottom: 0;
   border-top: solid 4px;
-  margin-top: 0;
-  padding: 64px;
+  padding: 0 64px;
 }
 
 header > .menu.left {
@@ -29,17 +33,33 @@ header > .menu.right {
   border-top-color: white;
 }
 
+.search-section > form > input {
+  width: 20%;
+}
+
+.search-section > form > .fa-search {
+  display: none;
+}
+
+.search-section > form > .search {
+  display: inline-block;
+}
+
+.search-section > form > .filter > label {
+  line-height: 250%;
+}
+
 .result-section {
   display: grid;
-  grid-template-columns: 1fr 30%;
+  grid-template-columns: 1fr 35%;
   grid-template-areas: "host popular";
 }
 
 .host-section {
   background-color: var(--grey-one);
-  margin: 0 5% 0 5%;
-  padding: 5%;
-  border-radius: 5%;
+  margin: 0 32px 0 64px;
+  padding: 30px;
+  border-radius: 30px;
   grid-area: host;
   display: grid;
   grid-auto-columns: 1fr;
@@ -87,30 +107,37 @@ header > .menu.right {
 .popular-section {
   grid-area: popular;
   padding: 5%;
-  border-radius: 5%;
-  margin: 0 5% 0 5%;
+  border-radius: 30px;
+  margin: 0 64px 0 32px;
 }
 
 .activity-section {
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
+  grid-template-rows: auto 120px 120px 120px 120px 120px 120px;
   grid-template-areas:
     "act-title act-title . . "
     "a1 a2 a4 a5"
+    "a1 a2 a4 a5"
+    "a1 a2 a4 a5"
+    "a1 a2 a4 a6"
+    "a1 a3 a4 a6"
     "a1 a3 a4 a6";
 }
 
 .activity-section > h2 {
   grid-area: act-title;
+  margin-left: 0;
 }
 
 .activity-section > .result > img {
-  /* height: 80%; */
+  height: calc(100% - 70px);
 }
 
 #a1 {
   grid-area: a1;
+  margin-left: 0;
 }
 
 #a2 {
@@ -127,8 +154,32 @@ header > .menu.right {
 
 #a5 {
   grid-area: a5;
+  margin-right: 0;
 }
 
 #a6 {
   grid-area: a6;
+  margin-right: 0;
+}
+
+footer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "p1 p2 p3";
+}
+
+#p1 {
+  grid-area: p1;
+}
+
+#p2 {
+  grid-area: p2;
+}
+
+#p3 {
+  grid-area: p3;
+}
+
+footer > div {
+  text-align: center;
 }
