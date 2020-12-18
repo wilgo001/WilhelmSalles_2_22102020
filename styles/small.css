@@ -124,7 +124,6 @@ nav {
   font-size: 2.1rem;
   font-weight: bold;
   padding-left: 20px;
-  padding-right: auto;
   border-top: var(--grey-one) solid 2px;
   border-bottom: var(--grey-one) solid 2px;
   border-left: 6px var(--grey-one) solid 2px;
@@ -231,7 +230,6 @@ nav {
 .popular-section > h2::after {
   font-family: "Font Awesome 5 Free";
   content: "\f201";
-  align-items: left;
   margin-left: 130px;
 }
 
