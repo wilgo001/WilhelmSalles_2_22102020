@@ -1,12 +1,12 @@
 :root {
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .search-section,
 .host-section,
 .activity-section,
 header > .logo {
-  margin: auto 64px;
+  margin: auto 30px;
 }
 
 header > .connexion {
@@ -15,19 +15,25 @@ header > .connexion {
   padding: 4px 64px;
 }
 
-header > .menu {
+nav {
+  grid-row: 1;
+  grid-column: 2 / 4;
+  display: grid;
+}
+
+nav > .menu {
   border-bottom: 0;
   border-top: solid 4px;
   padding: 0 64px;
 }
 
-header > .menu.left {
+nav > .menu.left {
   grid-row: 1;
   grid-column: 4;
   border-top-color: var(--primary-color);
 }
 
-header > .menu.right {
+nav > .menu.right {
   grid-row: 1;
   grid-column: 5;
   border-top-color: white;
@@ -35,6 +41,7 @@ header > .menu.right {
 
 .search-section > form > input {
   width: 20%;
+  min-width: 270px;
 }
 
 .search-section > form > .fa-search {
@@ -45,20 +52,22 @@ header > .menu.right {
   display: inline-block;
 }
 
-.search-section > form > .filter > label {
-  line-height: 250%;
+.search-section > form > .filter > span {
+  line-height: 375%;
 }
 
 .result-section {
   display: grid;
   grid-template-columns: 1fr 35%;
-  grid-template-areas: "host popular";
+  grid-template-areas:
+    "host popular"
+    "activity activity";
 }
 
 .host-section {
   background-color: var(--grey-one);
-  margin: 0 32px 0 64px;
-  padding: 30px;
+  margin: 0 15px 0 30px;
+  padding: 15px;
   border-radius: 30px;
   grid-area: host;
   display: grid;
@@ -106,12 +115,13 @@ header > .menu.right {
 
 .popular-section {
   grid-area: popular;
-  padding: 5%;
+  padding: 15px;
   border-radius: 30px;
-  margin: 0 64px 0 32px;
+  margin: 0 30px 0 15px;
 }
 
 .activity-section {
+  grid-area: activity;
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
@@ -131,7 +141,7 @@ header > .menu.right {
   margin-left: 0;
 }
 
-.activity-section > .result > img {
+.activity-section > .result > picture > img {
   height: calc(100% - 70px);
 }
 
